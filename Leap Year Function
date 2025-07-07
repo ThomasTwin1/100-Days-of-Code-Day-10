@@ -24,4 +24,4 @@ is_leap_year(97)
 # → Example: 1900 ÷ 100 = 19 → ❌ Not a leap year
 #
 # UNLESS it’s also divisible by 400
-# → Example: 2000 ÷ 400 = 5 → ✅ It is a leap year
+# → Example: 2000 ÷ 400 = 5 → ✅ It is a leap year 
