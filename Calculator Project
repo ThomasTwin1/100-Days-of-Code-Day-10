@@ -1,0 +1,46 @@
+# Adding Function
+def add(n1, n2):
+     return n1 + n2
+
+adding = add
+print(adding(2, 3))
+
+
+# Subtracting Function
+def subtract(n1, n2):
+    return n1 - n2
+
+subtracting = subtract
+print(subtracting(3, 2))
+
+
+# Multiplying Function
+def multiply(n1, n2):
+    return n1 * n2
+
+multiplying = multiply
+print(multiplying(3, 2))
+
+
+# Dividing Function
+def divide(n1, n2):
+    return n1 / n2
+
+dividing = divide
+print(dividing(4, 2))
+
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide
+}
+
+
+
+
+
+
+
+
+
