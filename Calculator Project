@@ -1,52 +1,57 @@
 # Adding Function
 def add(n1, n2):
-     return n1 + n2
-
-
-
+    return n1 + n2
 
 # Subtracting Function
 def subtract(n1, n2):
     return n1 - n2
 
-
-
-
 # Multiplying Function
 def multiply(n1, n2):
     return n1 * n2
-
-
-
 
 # Dividing Function
 def divide(n1, n2):
     return n1 / n2
 
-
-
+# Dictionary of operations
 operations = {
     "+": add,
     "-": subtract,
     "*": multiply,
     "/": divide
 }
-print(operations["*"](4,8))
+
+# Ask user for the first number
+first_number = int(input("What's the first number? "))
+
+# Loop to continue calculating
+should_continue = True
+
+while should_continue:
+    # Ask for operation
+    operation = input("Pick an operation (+, -, *, /): ")
+
+    # Ask for the next number
+    next_number = int(input("What's the next number? "))
+
+    # Get the function and calculate the result
+    calculation_function = operations[operation]
+    answer = calculation_function(first_number, next_number)
+    print(f"{first_number} {operation} {next_number} = {answer}")
+
+    # Ask if user wants to continue
+    continue_input = input(f"Type 'y' to continue calculating with {answer}, or 'n' to start over or exit: ").lower()
+
+    if continue_input == 'y':
+        first_number = answer
+    else:
+        should_continue = False
+        print("Goodbye!")
 
 
-# Ask user for number
-first_number = int(input("What's the first number?"))
 
-# Ask for the operation
-first_operation = input("Pick an operation:")
 
-# Ask for next number
-next_number = int(input("What's the next number?"))
-
-# Print result
-result = operations[first_operation](first_number,next_number)
-print(result)
-# Ask if user wants to continue
 
 
 
